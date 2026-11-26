@@ -6,17 +6,16 @@ public class TestRecargar {
 
 	public static void main(String[] args) {
 		boolean resultado;
-		Maquina rubia = new Maquina ("Pilsener","Cerveza fria",0.02,8000);
+		Maquina rubia = new Maquina("MAQ-014", "Pilsener", "Cerveza fria", 0.02, 8000);
 		System.out.println("---Estado inicial---");
 		rubia.imprimir();
 		System.out.println("---Recarga 1---");
 		resultado = rubia.recargarCerveza(3000);
-		System.out.println("Se recargo correctamente: "+resultado);
+		System.out.println("Se recargo correctamente: " + resultado);
 		rubia.imprimir();
 		System.out.println("---Recarga 2---");
 		resultado = rubia.recargarCerveza(900000);
-		System.out.println("Se recargo incorrectamente: "+resultado);
+		System.out.println("Se recargo incorrectamente: " + resultado);
 		rubia.imprimir();
 	}
-
 }
